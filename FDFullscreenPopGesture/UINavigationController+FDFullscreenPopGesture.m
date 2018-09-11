@@ -67,6 +67,15 @@
     return YES;
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    UIView *view = otherGestureRecognizer.view;
+    BOOL shouldSimulate = false;
+    if ([view isKindOfClass:[UIScrollView class]]) {
+        shouldSimulate = ((UIScrollView *)view).contentOffset.x <= 0;
+    }
+    return [gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]] && shouldSimulate;
+}
+
 @end
 
 typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewController, BOOL animated);
