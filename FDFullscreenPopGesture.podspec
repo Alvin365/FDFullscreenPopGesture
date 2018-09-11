@@ -9,11 +9,11 @@ Pod::Spec.new do |s|
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.license = { :type => "MIT", :file => "LICENSE" }
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.author = { "forkingdog group" => "https://github.com/forkingdog" }
+  s.author = { "forkingdog group" => "https://github.com/Alvin365" }
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.platform = :ios, "7.0"
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source = { :git => "https://github.com/forkingdog/FDFullscreenPopGesture.git", :tag => "1.2" }
+  s.source = { :git => "https://github.com/Alvin365/FDFullscreenPopGesture.git", :tag => "1.2" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = "FDFullscreenPopGesture/*.{h,m}"
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
